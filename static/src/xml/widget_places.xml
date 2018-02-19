@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+    <t t-name="MapView">
+        <div class="o_map">
+
+            <div class="o_map_sidenav closed">
+                <div class="sidenav-body">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    </div>
+                </div>
+            </div>
+            <div class="o_map_view">
+                <div id="first-map"></div>
+
+                    <script 
+                    type="text/javascript" 
+                    src="/map_view/static/src/js/view/osm.js"></script>
+            </div>
+        </div>
+    </t>
+    
+    <t t-name="MapViewControl">
+        <div class="o_map_control">
+            <div class="btn_map_control" title="Map Layers">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </t>
+    <t t-name="MapViewRoutes">
+        <div class="o_map_routes_window">
+            <span/>
+        </div>
+    </t>
+</templates>
